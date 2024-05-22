@@ -1,0 +1,107 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+:root{
+    --body-font: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    font-size: 14px;
+}
+body{
+    font-style: var(--body-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;  
+    background: #17251f;
+}
+.container{
+    background: #005c4b;
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.9em 0.9em 1em rgba(0,0,0,0.5);
+}
+
+
+.heading{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.box {
+    margin: 0.2em 0;
+}
+.container .box p{
+    color: rgba(255, 255, 255, 0.781);
+}
+.container .box div{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0.5em 0;
+}
+.container .box input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    outline: none;
+    padding-left: 0.8em;
+    border-radius: 10px;
+    transition: all .4s
+}
+
+.container .box input:focus::placeholder{
+    color: white;
+}
+.container .box div::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 105%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #00a889, #00f4c7);
+}
+.loginBtn{
+    width: 102%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 0.5em 0;
+    transform: translate(-1%);
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right, #4d7f68, #7bcba6);
+    transition: all .4s;
+}
+
+.loginBtn:hover{
+    transform: translate(-1%, 5%);
+    box-shadow: 0 0 10px #ff416d65;
+}
+.text{
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.623);
+}
+.text a{
+    color: rgba(255, 255, 255, 0.911);
+}
+
+
